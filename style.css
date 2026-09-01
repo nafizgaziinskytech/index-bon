@@ -14,15 +14,15 @@
   --lime-ink:#586B12;
   --lime-tint:#EFF6D6;
   --lime-dim:#D3E7A0;
-  --coral:#FF6B45;
-  --coral-ink:#B5431F;
-  --coral-tint:#FFE7DC;
-  --coral-dim:#FFC7AE;
+  --coral:#5845ff;
+  --coral-ink:#211fb5;
+  --coral-tint:#e2dcff;
+  --coral-dim:#bdaeff;
   --ease:cubic-bezier(.16,.84,.44,1);
   --maxw:1280px;
   --display:'Fraunces',serif;
   --body:'Inter',sans-serif;
-  --mono:'JetBrains Mono',monospace;
+  --mono:"Roboto", sans-serif;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -547,26 +547,26 @@ section{position:relative; z-index:1; scroll-margin-top:90px;}
 #gbpWidget .gbp-card-title { font-family: var(--display, serif); font-size:21px; font-weight:600; color:var(--ink, #15140F); letter-spacing:-0.01em; }
 #gbpWidget .gbp-card-rating { display:flex; align-items:center; gap:7px; margin-top:8px; font-family: var(--body, sans-serif); }
 #gbpWidget .gbp-card-rating .score { font-size:13.5px; font-weight:700; color:var(--ink, #15140F); }
-#gbpWidget .gbp-card-rating .stars { color: var(--coral, #FF6B45); font-size:14px; letter-spacing:-1px; }
+#gbpWidget .gbp-card-rating .stars { color: var(--coral, #4558ff); font-size:14px; letter-spacing:-1px; }
 #gbpWidget .gbp-card-rating .count { font-size:12px; color:var(--ink-dim, #55524A); }
 #gbpWidget .gbp-card-top-1 {
-  display:flex; align-items:center; gap:6px; font-size:10px; font-weight:700; color: var(--coral-ink, #B5431F);
-  background: var(--coral-tint, #FFE7DC); padding:4px 9px; border-radius:20px; width:fit-content; margin-top:11px;
+  display:flex; align-items:center; gap:6px; font-size:10px; font-weight:700; color: var(--coral-ink, #351fb5);
+  background: var(--coral-tint, #e4dcff); padding:4px 9px; border-radius:20px; width:fit-content; margin-top:11px;
   font-family: var(--mono, monospace); letter-spacing: 0.02em;
 }
-#gbpWidget .gbp-shopicon { width:52px; height:52px; flex:0 0 auto; border-radius:50%; background: var(--bg-1, #F6F4EE); display:flex; align-items:center; justify-content:center; }
-#gbpWidget .gbp-card-loc { display:flex; align-items:center; gap:6px; margin-top:14px; font-size:12.5px; color:var(--ink-dim, #55524A); font-family: var(--body, sans-serif); }
+#gbpWidget .gbp-shopicon { width:52px; height:52px; flex:0 0 auto; border-radius:50%; background: var(--bg-1, #efeef6); display:flex; align-items:center; justify-content:center; }
+#gbpWidget .gbp-card-loc { display:flex; align-items:center; gap:6px; margin-top:14px; font-size:12.5px; color:var(--ink-dim, #4c4a55); font-family: var(--body, sans-serif); }
 #gbpWidget .gbp-card-actions { display:grid; grid-template-columns:repeat(4,1fr); gap:5px; margin-top:18px; padding-top:16px; border-top:1px solid var(--line, #E7E3D6); }
 #gbpWidget .gbp-card-actions button {
   all:unset; display:flex; flex-direction:column; align-items:center; gap:5px; cursor:pointer;
-  font-size:9.5px; font-weight:600; color: var(--coral-ink, #B5431F); padding:5px 2px; border-radius:10px;
+  font-size:9.5px; font-weight:600; color: var(--coral-ink, #3a1fb5); padding:5px 2px; border-radius:10px;
   font-family: var(--body, sans-serif);
 }
 #gbpWidget .gbp-card-actions .icon-circle {
-  width:36px; height:36px; border-radius:50%; border:1.5px solid var(--coral, #FF6B45);
+  width:36px; height:36px; border-radius:50%; border:1.5px solid var(--coral, #6145ff);
   display:flex; align-items:center; justify-content:center; transition: background .2s ease, transform .15s ease;
 }
-#gbpWidget .gbp-card-actions button:hover .icon-circle { background: var(--coral, #FF6B45); transform: translateY(-2px); }
+#gbpWidget .gbp-card-actions button:hover .icon-circle { background: var(--coral, #5845ff); transform: translateY(-2px); }
 #gbpWidget .gbp-card-actions button:hover .icon-circle svg { stroke: var(--on-dark, #FAFAF6); }
 
 @media (max-width: 640px) {
@@ -669,10 +669,10 @@ section{position:relative; z-index:1; scroll-margin-top:90px;}
 .port-card:hover .port-arrow{transform:translate(3px,-3px); color:var(--ink);}
 
 .cover-1{background:linear-gradient(135deg,#211F17,#4A4738);}
-.cover-2{background:linear-gradient(135deg,#FF6B45,#B5431F);}
+.cover-2{background:linear-gradient(135deg,#5845ff,#291fb5);}
 .cover-3{background:linear-gradient(135deg,#DBFF57,#9BB637);}
 .cover-4{background:linear-gradient(135deg,#2B2A20,#5C5946);}
-.cover-5{background:linear-gradient(135deg,#B5431F,#6E2712);}
+.cover-5{background:linear-gradient(135deg,#3a1fb5,#14126e);}
 .cover-6{background:linear-gradient(135deg,#586B12,#33400A);}
 
 /* ============ CTA ============ */
