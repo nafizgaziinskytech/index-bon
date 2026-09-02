@@ -723,3 +723,24 @@ SLIDERS.forEach(({ trackId, logos }) => {
   const viewport = track.closest(".slider-viewport");
   ensureFillsViewport(track, viewport, logos, () => initMotion(track));
 });
+function updateClock() {
+  const now = new Date();
+  
+  // Format options for only hours and minutes without a leading zero
+  const options = { 
+    hour: 'numeric', 
+    minute: '2-digit', 
+    hour12: true 
+  };
+  
+  // Convert to localized string and remove the " AM/PM" part
+  let timeString = now.toLocaleTimeString('en-US', options);
+  timeString = timeString.replace(/\s?[A-Z]{2}$/i, ''); 
+
+  // Update the HTML element
+  document.getElementById('clock').textContent = timeString;
+}
+
+// Run immediately and update every 1 second
+updateClock();
+setInterval(updateClock, 1000);
